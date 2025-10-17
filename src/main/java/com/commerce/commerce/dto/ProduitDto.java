@@ -1,9 +1,7 @@
 package com.commerce.commerce.dto;
 
 import com.commerce.commerce.model.Category;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+
 
 public class ProduitDto {
     private String nomProduit;
