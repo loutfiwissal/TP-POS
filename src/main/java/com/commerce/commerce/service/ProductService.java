@@ -51,6 +51,9 @@ public class ProductService {
         }
         productRepository.deleteById(id);
     }
+    public void deleteAllProducts(){
+        productRepository.deleteAll();
+    }
 
     public ProductDto modifyProduct(ProductDto productDto, long id) {
         Product product = productRepository.findById(id)
