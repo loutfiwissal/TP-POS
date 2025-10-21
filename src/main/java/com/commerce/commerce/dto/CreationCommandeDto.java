@@ -1,18 +1,13 @@
 package com.commerce.commerce.dto;
-import java.util.Map;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CreationCommandeDto {
-    private Map<Long, Integer> produitsQuantites;
-
-    public CreationCommandeDto(){}
-
-    public CreationCommandeDto(Map<Long, Integer> produitsQuantites){
-        this.produitsQuantites=produitsQuantites;
-    }
-    public Map<Long, Integer> getProduitsQuantites() {
-        return produitsQuantites;
-    }
-    public void setProduitsQuantites(Map<Long, Integer> produitsQuantites) {
-        this.produitsQuantites = produitsQuantites;
-    }
-
+    private List<Long> produitIds;
 }
